@@ -1,42 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap');
 
 :root {
-    /* --- Brand Palette (Boutique Luxe V4) --- */
+    /* --- Ultra-Modern Feminine Palette (V5) --- */
     --navy: #2a3950;
     --navy-light: #445672;
-    --red: #e63946;
+    --rose: #FF6B9D;
+    --rose-light: #FFE5F1;
+    --coral: #FF8A80;
+    --purple: #9D4EDD;
     --orange: #f77f00;
     --gold: #d4a373;
-    /* Sophisticated gold */
     --gold-soft: #fdf5e6;
-    /* Champagne tint */
-    --rose-base: #f7e9e9;
-    /* Very soft rose for backgrounds */
     --cream: #f9fbff;
     --white: #ffffff;
     --gray-100: #f1f3f5;
     --gray-200: #e9ecef;
 
-    /* --- Gradients --- */
-    --gold-gradient: linear-gradient(135deg, #d4a373 0%, #faedcd 100%);
-    --navy-gradient: linear-gradient(135deg, #2a3950 0%, #445672 100%);
+    /* --- Organic Gradients (Feminine) --- */
+    --gradient-primary: linear-gradient(135deg, var(--rose) 0%, var(--orange) 50%, var(--purple) 100%);
+    --gradient-soft: linear-gradient(135deg, var(--rose-light) 0%, var(--gold-soft) 100%);
+    --gradient-ai: linear-gradient(135deg, var(--coral) 0%, var(--orange) 100%);
+    --gradient-glow: radial-gradient(circle, var(--rose) 0%, transparent 70%);
 
-    /* --- Design System (Sophisticated Focus) --- */
+    /* --- Design System (2026 Modern) --- */
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --radius-sm: 8px;
-    --radius-md: 16px;
+    --radius-sm: 12px;
+    --radius-md: 20px;
     --radius-lg: 32px;
+    --radius-xl: 48px;
     --radius-full: 9999px;
 
-    --shadow-soft: 0 10px 40px rgba(42, 57, 80, 0.05);
-    --shadow-deep: 0 30px 60px rgba(42, 57, 80, 0.1);
-    --glass: rgba(255, 255, 255, 0.85);
-    --glass-border: rgba(255, 255, 255, 0.4);
+    /* Advanced Glassmorphism */
+    --glass: rgba(255, 255, 255, 0.7);
+    --glass-strong: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-blur: blur(40px);
 
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    --section-padding: 100px;
+    /* Feminine Shadows */
+    --shadow-soft: 0 10px 40px rgba(255, 107, 157, 0.08);
+    --shadow-medium: 0 20px 60px rgba(255, 107, 157, 0.12);
+    --shadow-deep: 0 30px 80px rgba(255, 107, 157, 0.15);
+    --shadow-glow: 0 0 40px rgba(255, 107, 157, 0.3);
+
+    --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    --section-padding: 120px;
 }
 
 /* --- Global Reset & Base --- */
@@ -340,13 +350,13 @@ nav ul a:hover {
     }
 }
 
-/* --- Hero Section (Boutique Luxe V4) --- */
+/* --- Hero Section (V5 Ultra-Modern Feminine) --- */
 .hero {
     min-height: 95vh;
     display: flex;
     align-items: center;
-    padding: 160px 0 120px;
-    background: radial-gradient(circle at top right, var(--gold-soft) 0%, var(--white) 60%);
+    padding: 180px 0 140px;
+    background: radial-gradient(circle at top right, var(--rose-light) 0%, var(--white) 50%);
     position: relative;
     overflow: hidden;
 }
@@ -354,13 +364,15 @@ nav ul a:hover {
 .hero::before {
     content: '';
     position: absolute;
-    top: 10%;
-    left: -10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, var(--rose-base) 0%, transparent 70%);
-    opacity: 0.6;
+    top: 15%;
+    left: -5%;
+    width: 600px;
+    height: 600px;
+    background: var(--gradient-soft);
+    opacity: 0.4;
     z-index: 0;
+    border-radius: 50%;
+    filter: blur(80px);
 }
 
 .hero-inner {
@@ -449,40 +461,66 @@ nav ul a:hover {
     }
 }
 
-/* --- Decor Elements & Animations (Dynamic V4) --- */
+/* --- Morphing Blobs & Animations (V5 Professional) --- */
 .decor-blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
+    filter: blur(100px);
     z-index: 0;
-    opacity: 0.4;
+    opacity: 0.5;
     pointer-events: none;
-    animation: blob-float 10s infinite alternate;
+    animation: blob-morph 15s ease-in-out infinite;
 }
 
 .blob-1 {
-    width: 300px;
-    height: 300px;
-    background: var(--gold-soft);
-    top: -100px;
+    width: 400px;
+    height: 400px;
+    background: var(--gradient-glow);
+    top: -150px;
     right: -100px;
+    animation-delay: 0s;
 }
 
 .blob-2 {
-    width: 250px;
-    height: 250px;
-    background: var(--rose-base);
-    bottom: -50px;
-    left: -50px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, var(--rose-light) 0%, transparent 70%);
+    bottom: -100px;
+    left: -80px;
+    animation-delay: 3s;
 }
 
-@keyframes blob-float {
-    0% {
-        transform: translateY(0) scale(1);
+.blob-3 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, var(--purple) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    animation-delay: 6s;
+}
+
+@keyframes blob-morph {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 
-    100% {
-        transform: translateY(40px) scale(1.1);
+    25% {
+        transform: translate(30px, -30px) scale(1.1) rotate(90deg);
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    50% {
+        transform: translate(-20px, 20px) scale(0.9) rotate(180deg);
+        border-radius: 40% 60% 50% 60% / 70% 40% 60% 30%;
+    }
+
+    75% {
+        transform: translate(20px, 30px) scale(1.05) rotate(270deg);
+        border-radius: 70% 30% 40% 60% / 40% 70% 50% 60%;
     }
 }
 
