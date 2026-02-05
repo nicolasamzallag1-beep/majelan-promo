@@ -829,26 +829,25 @@ p {
 }
 
 .value-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--orange) 0%, var(--yellow) 100%);
-    border-radius: 16px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(247, 127, 0, 0.15) 0%, rgba(252, 191, 73, 0.15) 100%);
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--white);
+    font-size: 2rem;
     margin: 0 auto 16px;
-    box-shadow: 0 4px 16px rgba(247, 127, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(247, 127, 0, 0.2);
     transition: var(--transition);
-    transform: rotate(-5deg);
+    border: 2px solid rgba(247, 127, 0, 0.2);
 }
 
 .value-item:hover .value-icon {
-    background: linear-gradient(135deg, var(--red) 0%, var(--orange) 100%);
-    transform: rotate(5deg) scale(1.15);
-    box-shadow: 0 8px 24px rgba(247, 127, 0, 0.5);
+    background: linear-gradient(135deg, rgba(247, 127, 0, 0.25) 0%, rgba(252, 191, 73, 0.25) 100%);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 24px rgba(247, 127, 0, 0.3);
+    border-color: var(--orange);
 }
 
 .value-item h4 {
