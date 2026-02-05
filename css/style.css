@@ -1506,7 +1506,8 @@ p {
     }
 
     .hero {
-        padding: 130px 0 40px;
+        padding: 160px 0 40px;
+        min-height: 100vh;
     }
 
     .hero-title {
