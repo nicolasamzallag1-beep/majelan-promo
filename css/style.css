@@ -305,6 +305,93 @@ section {
     padding: 100px 0;
 }
 
+/* --- Expertise Section --- */
+.expertise-section {
+    background: #ffffff;
+    /* White background */
+}
+
+.expertise-section .section-title {
+    color: #1a2332;
+    /* Marine text */
+}
+
+.expertise-card h3 {
+    color: #1a2332;
+}
+
+.expertise-card ul li {
+    color: #495057;
+    /* Dark gray */
+}
+
+/* --- Value Section --- */
+.value-section {
+    background: linear-gradient(180deg, #1a2332 0%, #f8f9fa 100%);
+    /* Marine to cream gradient */
+    color: #f8f9fa;
+    /* Light text on dark gradient */
+}
+
+.value-section .section-title,
+.value-section .section-subtitle {
+    color: #f8f9fa;
+}
+
+/* --- Process Section --- */
+.process-section {
+    background: #e9ecef;
+    /* Light gray */
+}
+
+.process-section .section-title {
+    color: #1a2332;
+    /* Marine text */
+}
+
+.timeline-item h3,
+.timeline-item p {
+    color: #1a2332;
+}
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    background: #ffffff;
+    /* White */
+}
+
+.testimonials-section .section-title {
+    color: #1a2332;
+}
+
+.testimonial-card .quote {
+    color: #495057;
+}
+
+.testimonial-card strong {
+    color: #1a2332;
+}
+
+.testimonial-card span {
+    color: #6c757d;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    background: #1a2332;
+    /* Marine background */
+    color: #f8f9fa;
+}
+
+.contact-section h2,
+.contact-section .orange-text {
+    color: #f8f9fa;
+}
+
+.contact-section .orange-text {
+    color: var(--orange) !important;
+}
+
 .section-title {
     font-size: 2.5rem;
     text-align: center;
@@ -317,6 +404,8 @@ section {
 .promo-section {
     padding-top: 0;
     /* Merge closer to hero */
+    background: #f8f9fa;
+    /* Cream background */
 }
 
 .promo-card {
@@ -385,15 +474,16 @@ section {
     align-items: center;
     gap: 16px;
     font-size: 1.1rem;
-    color: var(--text-main);
-    background: rgba(255, 255, 255, 0.03);
+    color: #1a2332;
+    /* Marine text on cream bg */
+    background: rgba(26, 35, 50, 0.03);
     padding: 16px;
     border-radius: 12px;
     transition: background 0.2s;
 }
 
 .feature-item:hover {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(26, 35, 50, 0.06);
 }
 
 .check-icon {
@@ -409,8 +499,8 @@ section {
 
 /* --- Expertise --- */
 .expertise-card {
-    background: var(--bg-card);
-    border: var(--glass-border);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(26, 35, 50, 0.1);
     padding: 40px;
     border-radius: var(--radius-lg);
     transition: transform 0.3s;
@@ -476,10 +566,7 @@ section {
 }
 
 /* --- Contact / CTA --- */
-.contact-section {
-    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.4));
-    padding-bottom: 120px;
-}
+/* Background already defined above in section-specific styles */
 
 .contact-container {
     display: grid;
@@ -496,15 +583,16 @@ section {
 }
 
 .contact-form {
-    background: var(--bg-glass);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     padding: 40px;
     border-radius: var(--radius-xl);
-    border: var(--glass-border);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .form-group label {
-    color: var(--text-muted);
+    color: #e9ecef;
+    /* Light gray on marine */
     font-size: 0.9rem;
     margin-bottom: 8px;
     display: block;
@@ -514,8 +602,8 @@ section {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
     padding: 16px;
     border-radius: 12px;
@@ -534,9 +622,11 @@ section {
 
 /* --- Footer --- */
 footer {
-    background: #02040a;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: #1a2332;
+    /* Marine background */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 80px 0 40px;
+    color: #f8f9fa;
 }
 
 .footer-col h3 {
