@@ -176,10 +176,12 @@ p {
 }
 
 .logo img {
-    height: 50px;
+    height: 65px;
     width: auto;
     transition: var(--transition-fast);
     filter: drop-shadow(0 2px 8px rgba(247, 127, 0, 0.3));
+    background: transparent;
+    border: none;
 }
 
 .logo img:hover {
