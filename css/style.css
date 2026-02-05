@@ -1513,7 +1513,7 @@ p {
     }
 
     .hero {
-        padding: 180px 0 40px;
+        padding: 200px 0 40px;
         min-height: 100vh;
     }
 
@@ -1637,5 +1637,22 @@ p {
     .testimonials-section,
     .cta-section {
         padding: 50px 0 !important;
+    }
+
+    .sparkle {
+        font-size: 1.2rem;
+    }
+
+    /* Compact header on mobile */
+    .header {
+        padding: 8px 0 !important;
+    }
+
+    .header.scrolled {
+        padding: 6px 0 !important;
+    }
+
+    .logo img {
+        height: 45px !important;
     }
 }
