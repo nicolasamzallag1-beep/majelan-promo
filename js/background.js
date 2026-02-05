@@ -57,15 +57,13 @@ class BackgroundAnimation {
             'rgba(26, 35, 50, 0.5)',   // Marine (Base)
             'rgba(230, 57, 70, 0.05)', // Red
             'rgba(247, 127, 0, 0.05)', // Orange
-            'rgba(252, 191, 73, 0.05)', // Yellow
-            'rgba(56, 189, 248, 0.05)'  // Light Blue (Subtle Premium Accent)
+            'rgba(252, 191, 73, 0.05)' // Yellow
         ];
 
         this.waves.push(new Wave(this.canvas, colors[0], 100, 0.005, 0.002));
         this.waves.push(new Wave(this.canvas, colors[1], 150, 0.003, 0.005));
         this.waves.push(new Wave(this.canvas, colors[2], 200, 0.002, 0.003));
         this.waves.push(new Wave(this.canvas, colors[3], 250, 0.004, -0.002));
-        this.waves.push(new Wave(this.canvas, colors[4], 300, 0.003, 0.004)); // Light Blue Wave
     }
 
     animate() {

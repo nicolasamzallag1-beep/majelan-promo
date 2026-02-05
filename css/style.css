@@ -253,8 +253,6 @@ a {
     text-align: center;
     padding-top: 80px;
     position: relative;
-    /* Subtle Light Blue Glow */
-    background: radial-gradient(circle at center, rgba(56, 189, 248, 0.05) 0%, transparent 60%);
 }
 
 .hero-content h1 {
