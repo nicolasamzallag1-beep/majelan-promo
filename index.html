@@ -4,419 +4,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atelier Majelan | Agence Web Premium Lyon - Site à 999€</title>
+    <meta name="description"
+        content="Atelier Majelan - Création de site web professionnel à 999€. Agence web Lyon spécialisée en communication, SEO et intelligence artificielle. Offre limitée !">
+    <title>Atelier Majelan | Site Web Professionnel à 999€ - Lyon</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- WhatsApp Fixed Widget -->
-    <a href="https://wa.me/33600000000" class="whatsapp-fixed" target="_blank">
-        <i data-lucide="message-circle"></i>
-    </a>
-
     <!-- Header -->
-    <header id="main-header">
+    <header class="header">
         <div class="container header-inner">
-            <a href="#" class="logo-wrap">
-                <img src="image0.jpeg" alt="Atelier Majelan" class="logo-img">
+            <a href="#accueil" class="logo">
+                <img src="assets/logo.png" alt="Atelier Majelan Logo">
             </a>
-
-            <nav>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#offre">Offre</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#contact" class="btn btn-navy btn-sm">Contact</a></li>
-                </ul>
-                <div class="burger-menu" id="burger">
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                </div>
+            <nav class="nav">
+                <a href="#accueil">Accueil</a>
+                <a href="#offre">Offre</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
             </nav>
+            <div class="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section (V5 Ultra-Modern) -->
+    <!-- Hero Section -->
     <section class="hero" id="accueil">
-        <div class="decor-blob blob-1"></div>
-        <div class="decor-blob blob-2"></div>
-        <div class="decor-blob blob-3"></div>
+        <span class="sparkle" style="top: 15%; left: 10%;">✨</span>
+        <span class="sparkle" style="top: 25%; right: 15%;">✨</span>
+        <span class="sparkle" style="bottom: 20%; left: 20%;">✨</span>
 
-        <div class="container hero-inner">
-            <div class="floating-card" style="top: 15%; right: 8%; display: block; max-width: 220px;">
-                <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">✨ IA intégrée
-                    nativement</span>
-            </div>
-
-            <div class="reveal">
-                <span class="logo-baseline">atelier majelan</span>
-                <h1>L'agence qui manie<br>communication, SEO et<br><span class="gradient-text">intelligence
-                        artificielle</span></h1>
-                <p class="hero-subtitle">On crée, on forme, on automatise : avec nous, vos projets gagnent en impact...
-                    et vous, du temps !</p>
-
-                <div class="hero-cta-wrap">
-                    <a href="#contact" class="btn btn-navy btn-lg">Parler de votre projet</a>
-                    <div class="response-badge">
-                        <div class="dot-live"></div>
-                        Réponse garantie sous 24h
-                    </div>
+        <div class="container hero-content reveal">
+            <span class="hero-badge">atelier majelan</span>
+            <h1>
+                l'agence qui crée votre<br>
+                site web professionnel à<br>
+                <span class="price">999€</span> seulement
+            </h1>
+            <p class="hero-subtitle">
+                Offre limitée — Création site internet Lyon<br>
+                Design moderne, SEO optimisé, IA intégrée
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Contactez-nous</a>
+                <div class="response-badge">
+                    <span class="dot-live"></span>
+                    Nous répondons sous 24h !
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Wave Divider -->
-    <div class="wave-divider" style="bottom: -1px;">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
-            style="fill: var(--cream);">
-            <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
-            </path>
-        </svg>
-    </div>
-    </div>
-    </section>
-
-    <!-- Section Offre Promo -->
+    <!-- Offre Promo Section -->
     <section class="promo" id="offre">
         <div class="container">
-            <div class="promo-card reveal">
-                <div class="price-reveal">
-                    <span class="badge badge-red promo-tag">promo limitée</span>
-                    <div class="old-price">1499€</div>
-                    <div class="new-price">999€</div>
-                    <div class="savings">Économisez 500€</div>
+            <div class="section-title reveal">
+                <span class="promo-badge">PROMO LIMITÉE</span>
+                <h2>votre site professionnel<br>à un prix exceptionnel</h2>
+            </div>
+
+            <div class="price-reveal reveal">
+                <div class="old-price">1499€</div>
+                <div class="new-price">999€</div>
+                <div class="savings">Économisez 500€</div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Design ultra-moderne responsive</span>
                 </div>
-                <div class="promo-content">
-                    <h2 style="margin-bottom: 25px;">Votre site professionnel à <span class="gradient-text">999€</span>
-                    </h2>
-                    <div class="features-grid">
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Design ultra-moderne responsive
-                        </div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Jusqu'à 7 pages personnalisées
-                        </div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> SEO optimisé par IA</div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Hébergement premium 1 an</div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Nom de domaine .fr offert</div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Formulaire intelligent</div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Réseaux sociaux</div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Formation complète</div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Maintenance 3 mois</div>
-                        <div class="feature-item"><i data-lucide="check-circle-2"></i> Vitesse Google optimisée</div>
-                    </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Jusqu'à 7 pages personnalisées</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>SEO optimisé par IA</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Hébergement premium 1 an</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Nom de domaine .fr offert</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Formulaire de contact intelligent</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Intégration réseaux sociaux</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Formation complète incluse</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Maintenance 3 mois offerte</span>
+                </div>
+                <div class="feature-item reveal">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Optimisation vitesse Google</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Expertise -->
+    <!-- Expertise Section -->
     <section class="expertise" id="expertise">
         <div class="container">
-            <div class="section-head reveal">
-                <h2>l'agence qui manie communication, SEO et intelligence artificielle</h2>
+            <div class="section-title reveal">
+                <h2>l'agence qui manie communication,<br>SEO et intelligence artificielle</h2>
             </div>
 
             <div class="expertise-grid">
                 <div class="expertise-card reveal">
-                    <div class="card-icon"><i data-lucide="layers"></i></div>
+                    <div class="card-icon">
+                        <i data-lucide="layers"></i>
+                    </div>
                     <h3>communication sur-mesure</h3>
-                    <ul>
-                        <li>stratégie digitale personnalisée</li>
-                        <li>branding et identité visuelle</li>
-                        <li>production de contenus</li>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-top: 20px;">
+                        <li style="margin-bottom: 12px;">✓ Stratégie digitale personnalisée</li>
+                        <li style="margin-bottom: 12px;">✓ Branding et identité visuelle</li>
+                        <li style="margin-bottom: 12px;">✓ Production de contenus</li>
                     </ul>
                 </div>
+
                 <div class="expertise-card reveal" style="transition-delay: 0.1s;">
-                    <div class="card-icon" style="background-color: var(--orange);"><i data-lucide="bot"></i></div>
+                    <div class="card-icon">
+                        <i data-lucide="bot"></i>
+                    </div>
                     <h3>SEO intelligent</h3>
-                    <ul>
-                        <li>optimisation par IA</li>
-                        <li>référencement naturel</li>
-                        <li>analytics et performance</li>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-top: 20px;">
+                        <li style="margin-bottom: 12px;">✓ Optimisation par IA</li>
+                        <li style="margin-bottom: 12px;">✓ Référencement naturel</li>
+                        <li style="margin-bottom: 12px;">✓ Analytics et performance</li>
                     </ul>
                 </div>
+
                 <div class="expertise-card reveal" style="transition-delay: 0.2s;">
-                    <div class="card-icon" style="background-color: var(--red);"><i data-lucide="monitor"></i></div>
+                    <div class="card-icon">
+                        <i data-lucide="monitor"></i>
+                    </div>
                     <h3>design moderne</h3>
-                    <ul>
-                        <li>ux/ui optimisé</li>
-                        <li>responsive all devices</li>
-                        <li>animations fluides</li>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-top: 20px;">
+                        <li style="margin-bottom: 12px;">✓ UX/UI optimisé</li>
+                        <li style="margin-bottom: 12px;">✓ Responsive all devices</li>
+                        <li style="margin-bottom: 12px;">✓ Animations fluides</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Valeur Ajoutée -->
-    <section class="value" style="position: relative; overflow: hidden;">
-        <!-- Background Decoration -->
-        <div
-            style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(230, 57, 70, 0.1) 0%, transparent 70%); border-radius: 50%;">
-        </div>
-
+    <!-- Valeur Ajoutée Section -->
+    <section class="valeur"
+        style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); color: white;">
         <div class="container">
-            <h2 class="reveal">on crée, on forme, on automatise :</h2>
-            <p class="reveal">avec nous, vos projets gagnent en impact... et vous, du temps !</p>
-
-            <div class="value-grid">
-                <div class="value-item reveal">
-                    <span class="icon">🚀</span>
-                    <h3>livraison express</h3>
-                    <p>votre site en ligne sous 2-3 semaines.</p>
-                </div>
-                <div class="value-item reveal" style="transition-delay: 0.1s;">
-                    <span class="icon">🎯</span>
-                    <h3>à lyon, pour lyon</h3>
-                    <p>une connaissance unique du marché local.</p>
-                </div>
-                <div class="value-item reveal" style="transition-delay: 0.2s;">
-                    <span class="icon">🤖</span>
-                    <h3>technologies IA</h3>
-                    <p>des outils de pointe intégrés à votre business.</p>
-                </div>
-                <div class="value-item reveal" style="transition-delay: 0.3s;">
-                    <span class="icon">💎</span>
-                    <h3>design qui convertit</h3>
-                    <p>transformer vos visiteurs en clients.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Wave Divider -->
-        <div class="wave-divider">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none" style="fill: var(--white); transform: rotate(180deg);">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
-                </path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Section Process (Boutique Journey) -->
-    <section class="process" id="process">
-        <div class="container">
-            <div class="section-head reveal" style="text-align: center; margin-bottom: 60px;">
-                <span
-                    style="color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 12px; display: block;">Le
-                    parcours Atelier Majelan</span>
-                <h2>Votre projet en 4 étapes clés</h2>
+            <div class="section-title reveal" style="color: white;">
+                <h2 style="color: white;">on crée, on forme, on automatise :</h2>
+                <p style="font-size: 1.3rem; color: var(--yellow); margin-top: 16px;">avec nous, vos projets gagnent en
+                    impact... et vous, du temps !</p>
             </div>
 
-            <div class="journey-grid">
-                <div class="journey-step reveal">
-                    <div class="step-badge">1</div>
-                    <div class="step-icon">
-                        <i data-lucide="coffee"></i>
-                    </div>
-                    <h3>Consultation</h3>
-                    <p>Un échange privilégié pour comprendre votre vision, vos clients et vos objectifs commerciaux.</p>
-                </div>
-
-                <div class="journey-step reveal" style="transition-delay: 0.1s;">
-                    <div class="step-badge">2</div>
-                    <div class="step-icon">
-                        <i data-lucide="pen-tool"></i>
-                    </div>
-                    <h3>Design & Identité</h3>
-                    <p>Nous créons une identité visuelle unique qui reflète votre savoir-faire et séduit votre audience.
-                    </p>
-                </div>
-
-                <div class="journey-step reveal" style="transition-delay: 0.2s;">
-                    <div class="step-badge">3</div>
-                    <div class="step-icon">
-                        <i data-lucide="code-2"></i>
-                    </div>
-                    <h3>Développement</h3>
-                    <p>Codage sur-mesure hyper-rapide, optimisé pour Google et parfaitement fluide sur mobile.</p>
-                </div>
-
-                <div class="journey-step reveal" style="transition-delay: 0.3s;">
-                    <div class="step-badge">4</div>
-                    <div class="step-icon">
-                        <i data-lucide="rocket"></i>
-                    </div>
-                    <h3>Lancement</h3>
-                    <p>Déploiement, formation à la prise en main et accompagnement pour vos premiers résultats.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-head reveal">
-                <h2>ils nous font confiance à Lyon</h2>
-            </div>
-
-            <div class="testi-grid">
-                <div class="testi-card reveal">
-                    <div class="testi-stars">★★★★★</div>
-                    <p class="testi-quote">"une équipe ultra-réactive et un design qui dépasse nos attentes. l'offre à
-                        999€ est imbattable."</p>
-                    <div class="testi-author">
-                        <div class="testi-avatar">ML</div>
-                        <div class="author-info">
-                            <h4>marc leroy</h4>
-                            <p>boulangerie artisanale</p>
-                        </div>
+            <div class="features-grid" style="margin-top: 60px;">
+                <div class="feature-item reveal"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                    <span style="font-size: 32px;">🚀</span>
+                    <div>
+                        <strong>Livraison express</strong><br>
+                        <span style="opacity: 0.8;">2-3 semaines</span>
                     </div>
                 </div>
-                <div class="testi-card reveal" style="transition-delay: 0.1s;">
-                    <div class="testi-stars">★★★★★</div>
-                    <p class="testi-quote">"le seo par ia a vraiment boosté notre visibilité locale en quelques semaines
-                        seulement."</p>
-                    <div class="testi-author">
-                        <div class="testi-avatar">JD</div>
-                        <div class="author-info">
-                            <h4>julie dupré</h4>
-                            <p>cabinet d'avocats</p>
-                        </div>
+                <div class="feature-item reveal"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                    <span style="font-size: 32px;">🎯</span>
+                    <div>
+                        <strong>À Lyon, pour Lyon</strong><br>
+                        <span style="opacity: 0.8;">Connaissance locale</span>
                     </div>
                 </div>
-                <div class="testi-card reveal" style="transition-delay: 0.2s;">
-                    <div class="testi-stars">★★★★★</div>
-                    <p class="testi-quote">"simple, efficace et très pro. l'accompagnement d'atelier majelan est
-                        exemplaire."</p>
-                    <div class="testi-author">
-                        <div class="testi-avatar">TM</div>
-                        <div class="author-info">
-                            <h4>thomas martin</h4>
-                            <p>coach sportif</p>
-                        </div>
+                <div class="feature-item reveal"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                    <span style="font-size: 32px;">🤖</span>
+                    <div>
+                        <strong>Technologies IA</strong><br>
+                        <span style="opacity: 0.8;">Intégrées nativement</span>
+                    </div>
+                </div>
+                <div class="feature-item reveal"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                    <span style="font-size: 32px;">💎</span>
+                    <div>
+                        <strong>Design qui convertit</strong><br>
+                        <span style="opacity: 0.8;">UX optimisé</span>
+                    </div>
+                </div>
+                <div class="feature-item reveal"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                    <span style="font-size: 32px;">📈</span>
+                    <div>
+                        <strong>ROI optimisé</strong><br>
+                        <span style="opacity: 0.8;">Résultats mesurables</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final Section -->
-    <section class="contact-section" id="contact">
-        <div class="container contact-grid">
-            <div class="contact-info reveal">
-                <h2>Prêt à lancer votre projet ?</h2>
-                <p>L'Atelier Majelan accompagne les entrepreneurs et les entreprises dans leur transformation digitale à
-                    Lyon. Bénéficiez d'un site web professionnel, clé en main, pour seulement 999€.</p>
-                <div class="contact-details" style="margin-top: 32px;">
-                    <div style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
-                        <i data-lucide="map-pin" style="color: var(--orange); width: 18px;"></i>
-                        <span>Lyon & alentours</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <i data-lucide="mail" style="color: var(--orange); width: 18px;"></i>
-                        <span>contact@atelier-majelan.com</span>
-                    </div>
-                </div>
-            </div>
-
-            <form class="contact-form reveal">
-                <div class="form-group">
-                    <label>Votre nom</label>
-                    <input type="text" placeholder="Michel Dupont" required>
-                </div>
-                <div class="form-group">
-                    <label>E-mail</label>
-                    <input type="email" placeholder="michel@entreprise.fr" required>
-                </div>
-                <div class="form-group">
-                    <label>Votre besoin</label>
-                    <select>
-                        <option>Site Vitrine (Offre 999€)</option>
-                        <option>Site E-commerce</option>
-                        <option>SEO & Intelligence Artificielle</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="4" placeholder="Parlez-nous de vos objectifs..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-navy" style="width: 100%;">Envoyer ma demande</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col reveal">
-                    <img src="image0.jpeg" alt="Atelier Majelan" style="height: 40px; margin-bottom: 24px;">
-                    <p style="opacity: 0.7; font-size: 0.9rem;">Créateur de communication sur-mesure spécialisé en SEO
-                        et Intelligence Artificielle.</p>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.1s;">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li>Lyon, France</li>
-                        <li>contact@atelier-majelan.com</li>
-                        <li style="color: var(--orange); font-weight: 700;">Réponse sous 24h</li>
-                    </ul>
-                </div>
-                <div class="footer-col reveal" style="transition-delay: 0.2s;">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#expertise">Création Site Web</a></li>
-                        <li><a href="#expertise">SEO & Référencement</a></li>
-                        <li><a href="#expertise">Conseil en IA</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Atelier Majelan. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="whatsapp-btn" aria-label="Contact WhatsApp">
+            <i data-lucide="message-circle"></i>
+        </a>
+    </div>
 
     <!-- Scripts -->
     <script>
-        // Init Lucide
+        // Initialize Lucide icons
         lucide.createIcons();
 
-        // Reveal Animation
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
+        // Scroll reveal animation
+        const reveals = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = () => {
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
                 }
-            }
-        }
-        window.addEventListener("scroll", reveal);
-        reveal(); // Initial check
+            });
+        };
 
-        // Header Scroll
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("scrolled", window.scrollY > 50);
-        });
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
 
-        // Burger Menu Toggle
-        const burger = document.getElementById('burger');
-        const navUl = document.querySelector('nav ul');
+        // Mobile menu toggle
+        const burgerMenu = document.querySelector('.burger-menu');
+        const nav = document.querySelector('.nav');
 
-        burger.addEventListener('click', () => {
-            navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
-            if (navUl.style.display === 'flex') {
-                navUl.style.flexDirection = 'column';
-                navUl.style.position = 'absolute';
-                navUl.style.top = '100px';
-                navUl.style.right = '5%';
-                navUl.style.background = 'white';
-                navUl.style.padding = '30px';
-                navUl.style.borderRadius = '24px';
-                navUl.style.boxShadow = '0 20px 50px rgba(0,0,0,0.1)';
-            }
+        burgerMenu?.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
         });
     </script>
 </body>
