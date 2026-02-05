@@ -1342,7 +1342,7 @@ p {
 
     .hero {
         min-height: 100vh;
-        padding: 140px 0 60px;
+        padding: 160px 0 60px;
     }
 
     .hero-title {
@@ -1513,7 +1513,7 @@ p {
     }
 
     .hero {
-        padding: 160px 0 40px;
+        padding: 180px 0 40px;
         min-height: 100vh;
     }
 
