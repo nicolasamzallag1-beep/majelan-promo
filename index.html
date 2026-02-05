@@ -4,34 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Atelier Majelan - Création de site web professionnel à 999€. Agence web Lyon spécialisée en communication, SEO et intelligence artificielle. Offre limitée !">
     <title>Atelier Majelan | Site Web Professionnel à 999€ - Lyon</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-
-    <!-- Styles -->
+    <meta name="description"
+        content="L'agence qui crée votre site web professionnel à 999€ seulement. Design moderne, SEO optimisé, IA intégrée. Offre limitée à Lyon.">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Header / Navigation -->
     <header class="header">
         <div class="container header-inner">
             <a href="#accueil" class="logo">
-                <img src="assets/logo.png" alt="Atelier Majelan Logo">
+                <img src="logo_strict.jpeg" alt="Atelier Majelan">
             </a>
             <nav class="nav">
                 <a href="#accueil">Accueil</a>
                 <a href="#offre">Offre</a>
-                <a href="#expertise">Expertise</a>
                 <a href="#process">Process</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-navy">Contactez-nous</a>
             </nav>
             <div class="burger-menu">
                 <span class="burger-line"></span>
@@ -44,226 +36,420 @@
     <!-- Hero Section -->
     <section class="hero" id="accueil">
         <span class="sparkle" style="top: 15%; left: 10%;">✨</span>
-        <span class="sparkle" style="top: 25%; right: 15%;">✨</span>
-        <span class="sparkle" style="bottom: 20%; left: 20%;">✨</span>
+        <span class="sparkle" style="top: 25%; right: 15%; animation-delay: 1s;">✨</span>
+        <span class="sparkle" style="bottom: 20%; left: 20%; animation-delay: 2s;">✨</span>
 
-        <div class="container hero-content reveal">
-            <span class="hero-badge">atelier majelan</span>
-            <h1>
+        <div class="container hero-content">
+            <span class="badge-orange">atelier majelan</span>
+            <h1 class="hero-title">
                 l'agence qui crée votre<br>
                 site web professionnel à<br>
-                <span class="price">999€</span> seulement
+                <span class="highlight">999€</span> seulement
             </h1>
             <p class="hero-subtitle">
                 Offre limitée — Création site internet Lyon<br>
                 Design moderne, SEO optimisé, IA intégrée
             </p>
             <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Contactez-nous</a>
-                <div class="response-badge">
-                    <span class="dot-live"></span>
+                <a href="#contact" class="btn btn-primary">
+                    Contactez-nous
+                    <span style="font-size: 1.2em;">🔒</span>
+                </a>
+                <div class="response-time">
+                    <div class="dot-status"></div>
                     Nous répondons sous 24h !
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Offre Promo Section -->
-    <section class="promo" id="offre">
+    <!-- Section Offre Promo -->
+    <section class="promo-section" id="offre">
         <div class="container">
-            <div class="section-title reveal">
-                <span class="promo-badge">PROMO LIMITÉE</span>
-                <h2>votre site professionnel<br>à un prix exceptionnel</h2>
+            <div class="price-box">
+                <span class="badge-limited">PROMO LIMITÉE</span>
+                <span class="old-price">1499€</span>
+                <span class="new-price">999€</span>
+                <span class="save-amount">Économisez 500€</span>
+                <p style="margin-top: 16px; opacity: 0.7;">* Durée limitée</p>
             </div>
 
-            <div class="price-reveal reveal">
-                <div class="old-price">1499€</div>
-                <div class="new-price">999€</div>
-                <div class="savings">Économisez 500€</div>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+            <div class="features-list">
+                <div class="feature-item">
+                    <i data-lucide="check-circle-2" class="check-icon"></i>
                     <span>Design ultra-moderne responsive</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="layout" class="check-icon"></i>
                     <span>Jusqu'à 7 pages personnalisées</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="bot" class="check-icon"></i>
                     <span>SEO optimisé par IA</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="server" class="check-icon"></i>
                     <span>Hébergement premium 1 an</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="globe" class="check-icon"></i>
                     <span>Nom de domaine .fr offert</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="mail-check" class="check-icon"></i>
                     <span>Formulaire de contact intelligent</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="share-2" class="check-icon"></i>
                     <span>Intégration réseaux sociaux</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="graduation-cap" class="check-icon"></i>
                     <span>Formation complète incluse</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="shield-check" class="check-icon"></i>
                     <span>Maintenance 3 mois offerte</span>
                 </div>
-                <div class="feature-item reveal">
-                    <i data-lucide="check-circle-2"></i>
+                <div class="feature-item">
+                    <i data-lucide="zap" class="check-icon"></i>
                     <span>Optimisation vitesse Google</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section class="expertise" id="expertise">
+    <!-- Section Expertise -->
+    <section class="expertise-section" id="expertise">
         <div class="container">
-            <div class="section-title reveal">
-                <h2>l'agence qui manie communication,<br>SEO et intelligence artificielle</h2>
-            </div>
-
+            <h2 class="section-title">l'agence qui manie communication, SEO et intelligence artificielle</h2>
             <div class="expertise-grid">
-                <div class="expertise-card reveal">
+                <div class="expertise-card">
                     <div class="card-icon">
-                        <i data-lucide="layers"></i>
+                        <i data-lucide="message-square"></i>
                     </div>
                     <h3>communication sur-mesure</h3>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-top: 20px;">
-                        <li style="margin-bottom: 12px;">✓ Stratégie digitale personnalisée</li>
-                        <li style="margin-bottom: 12px;">✓ Branding et identité visuelle</li>
-                        <li style="margin-bottom: 12px;">✓ Production de contenus</li>
+                    <ul>
+                        <li>Stratégie digitale personnalisée</li>
+                        <li>Branding et identité visuelle</li>
+                        <li>Storytelling impactant</li>
                     </ul>
                 </div>
-
-                <div class="expertise-card reveal" style="transition-delay: 0.1s;">
+                <div class="expertise-card">
                     <div class="card-icon">
-                        <i data-lucide="bot"></i>
+                        <i data-lucide="search"></i>
                     </div>
                     <h3>SEO intelligent</h3>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-top: 20px;">
-                        <li style="margin-bottom: 12px;">✓ Optimisation par IA</li>
-                        <li style="margin-bottom: 12px;">✓ Référencement naturel</li>
-                        <li style="margin-bottom: 12px;">✓ Analytics et performance</li>
+                    <ul>
+                        <li>Optimisation IA</li>
+                        <li>Référencement naturel</li>
+                        <li>Analytics et performance</li>
                     </ul>
                 </div>
-
-                <div class="expertise-card reveal" style="transition-delay: 0.2s;">
+                <div class="expertise-card">
                     <div class="card-icon">
                         <i data-lucide="monitor"></i>
                     </div>
                     <h3>design moderne</h3>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-top: 20px;">
-                        <li style="margin-bottom: 12px;">✓ UX/UI optimisé</li>
-                        <li style="margin-bottom: 12px;">✓ Responsive all devices</li>
-                        <li style="margin-bottom: 12px;">✓ Animations fluides</li>
+                    <ul>
+                        <li>UX/UI optimisé</li>
+                        <li>Responsive all devices</li>
+                        <li>Animations fluides</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Valeur Ajoutée Section -->
-    <section class="valeur"
-        style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); color: white;">
+    <!-- Section Valeur Ajoutée -->
+    <section class="value-section">
         <div class="container">
-            <div class="section-title reveal" style="color: white;">
-                <h2 style="color: white;">on crée, on forme, on automatise :</h2>
-                <p style="font-size: 1.3rem; color: var(--yellow); margin-top: 16px;">avec nous, vos projets gagnent en
-                    impact... et vous, du temps !</p>
+            <h2 class="section-title">on crée, on forme, on automatise :</h2>
+            <p class="section-subtitle">avec nous, vos projets gagnent en impact... et vous, du temps !</p>
+            <div class="value-grid">
+                <div class="value-item">
+                    <span class="value-icon">🚀</span>
+                    <h4>Livraison express</h4>
+                    <span>2-3 semaines</span>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🎯</span>
+                    <h4>À Lyon, pour Lyon</h4>
+                    <span>Connaissance locale</span>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🤖</span>
+                    <h4>Technologies IA</h4>
+                    <span>Intégrées nativement</span>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">💎</span>
+                    <h4>Design Premium</h4>
+                    <span>Qui convertit</span>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">📈</span>
+                    <h4>ROI Optimisé</h4>
+                    <span>Résultats concrets</span>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="features-grid" style="margin-top: 60px;">
-                <div class="feature-item reveal"
-                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
-                    <span style="font-size: 32px;">🚀</span>
-                    <div>
-                        <strong>Livraison express</strong><br>
-                        <span style="opacity: 0.8;">2-3 semaines</span>
+    <!-- Section Process -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <h2 class="section-title">notre process simple et efficace</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="process-card">
+                        <span class="step-number">Étape 1</span>
+                        <h3>Consultation gratuite</h3>
+                        <p>Analyse de vos besoins et définition des objectifs.</p>
                     </div>
                 </div>
-                <div class="feature-item reveal"
-                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
-                    <span style="font-size: 32px;">🎯</span>
-                    <div>
-                        <strong>À Lyon, pour Lyon</strong><br>
-                        <span style="opacity: 0.8;">Connaissance locale</span>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="process-card">
+                        <span class="step-number">Étape 2</span>
+                        <h3>Création maquette</h3>
+                        <p>Design sur-mesure validé avant développement.</p>
                     </div>
                 </div>
-                <div class="feature-item reveal"
-                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
-                    <span style="font-size: 32px;">🤖</span>
-                    <div>
-                        <strong>Technologies IA</strong><br>
-                        <span style="opacity: 0.8;">Intégrées nativement</span>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="process-card">
+                        <span class="step-number">Étape 3</span>
+                        <h3>Développement</h3>
+                        <p>Code propre, optimisé et intégration des contenus.</p>
                     </div>
                 </div>
-                <div class="feature-item reveal"
-                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
-                    <span style="font-size: 32px;">💎</span>
-                    <div>
-                        <strong>Design qui convertit</strong><br>
-                        <span style="opacity: 0.8;">UX optimisé</span>
-                    </div>
-                </div>
-                <div class="feature-item reveal"
-                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
-                    <span style="font-size: 32px;">📈</span>
-                    <div>
-                        <strong>ROI optimisé</strong><br>
-                        <span style="opacity: 0.8;">Résultats mesurables</span>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="process-card">
+                        <span class="step-number">Étape 4</span>
+                        <h3>Formation & Mise en ligne</h3>
+                        <p>Vous êtes autonome pour gérer votre site.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Section Témoignages -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">ils nous font confiance</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <div class="stars">★★★★★</div>
+                    <p>"Un site magnifique livré en 2 semaines. L'équipe a parfaitement compris notre besoin de
+                        modernité."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+                            alt="Thomas D." class="client-avatar">
+                        <div class="client-details">
+                            <h4>Thomas D.</h4>
+                            <span>Architecte à Lyon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <div class="stars">★★★★★</div>
+                    <p>"Le rapport qualité-prix est imbattable. Le design est pro et le SEO commence déjà à porter ses
+                        fruits."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1573496359-09a6d90a0906?w=100&h=100&fit=crop"
+                            alt="Sarah L." class="client-avatar">
+                        <div class="client-details">
+                            <h4>Sarah L.</h4>
+                            <span>Consultante RH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <div class="stars">★★★★★</div>
+                    <p>"J'ai particulièrement apprécié la formation incluse. Je peux modifier mes textes facilement. Top
+                        !"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop"
+                            alt="Marc B." class="client-avatar">
+                        <div class="client-details">
+                            <h4>Marc B.</h4>
+                            <span>Restaurateur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="urgency-box">
+                ⚠️ Offre limitée — Plus que 3 places disponibles ce mois-ci
+            </div>
+            <h2 class="section-title">votre site web professionnel à 999€ vous attend</h2>
+            <p class="section-subtitle">Ne passez pas à côté de cette opportunité de digitaliser votre activité avec une
+                agence experte.</p>
+
+            <div class="cta-grid">
+                <div class="cta-content">
+                    <ul class="trust-list">
+                        <li><i data-lucide="check"></i> Satisfaction garantie</li>
+                        <li><i data-lucide="check"></i> Agence basée à Lyon</li>
+                        <li><i data-lucide="check"></i> Devis gratuit et sans engagement</li>
+                    </ul>
+                </div>
+                <div class="cta-form">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Prénom & Nom</label>
+                            <input type="text" id="name" class="form-input" placeholder="Votre nom complet" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="votre@email.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="06 12 34 56 78">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Type de projet</label>
+                            <select id="project" class="form-input">
+                                <option value="">Choisir une option...</option>
+                                <option value="vitrine">Site Vitrine (Offre 999€)</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="redesign">Refonte de site</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Parlez-nous de votre projet</label>
+                            <textarea id="message" rows="4" class="form-input"
+                                placeholder="Vos objectifs, vos idées..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-orange btn-full">
+                            Demander mon devis gratuit
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo_strict.jpeg" alt="Atelier Majelan" class="footer-logo">
+                    <p>Créateur de communication sur-mesure.<br>Agence web experte à Lyon.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Lyon, France</a></li>
+                        <li><a href="mailto:contact@atelier-majelan.com">contact@atelier-majelan.com</a></li>
+                        <li><a href="#">atelier-majelan.com</a></li>
+                        <li class="response-badge">Réponse sous 24h</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Création site web</a></li>
+                        <li><a href="#">SEO & Référencement</a></li>
+                        <li><a href="#">Communication digitale</a></li>
+                        <li><a href="#">Formation & IA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="social-btn"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-btn"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Atelier Majelan - Créateur de communication sur-mesure</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- WhatsApp Widget -->
     <div class="whatsapp-widget">
-        <a href="https://wa.me/33XXXXXXXXX" target="_blank" class="whatsapp-btn" aria-label="Contact WhatsApp">
-            <i data-lucide="message-circle"></i>
+        <a href="https://wa.me/33600000000" target="_blank" class="whatsapp-btn" aria-label="Contact WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
         </a>
     </div>
 
     <!-- Scripts -->
     <script>
-        // Initialize Lucide icons
+        // Init Lucide Icons
         lucide.createIcons();
 
-        // Scroll reveal animation
-        const reveals = document.querySelectorAll('.reveal');
-
-        const revealOnScroll = () => {
-            reveals.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('active');
-                }
-            });
-        };
-
-        window.addEventListener('scroll', revealOnScroll);
-        window.addEventListener('load', revealOnScroll);
-
-        // Mobile menu toggle
-        const burgerMenu = document.querySelector('.burger-menu');
+        // Burger Menu
+        const burger = document.querySelector('.burger-menu');
         const nav = document.querySelector('.nav');
 
-        burgerMenu?.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply to sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)';
+            observer.observe(section);
+        });
+
+        // Form Submission
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Merci ! Nous vous répondrons sous 24h.');
         });
     </script>
 </body>
