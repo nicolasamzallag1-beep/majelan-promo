@@ -446,6 +446,72 @@ p {
     }
 }
 
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 48px;
+    padding: 24px 32px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
+.trust-item {
+    text-align: center;
+}
+
+.trust-stars {
+    color: var(--yellow);
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    filter: drop-shadow(0 2px 4px rgba(252, 191, 73, 0.4));
+}
+
+.trust-number {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    background: linear-gradient(135deg, var(--orange), var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.trust-text {
+    font-size: 0.85rem;
+    color: var(--navy-light);
+    font-weight: 500;
+}
+
+.trust-divider {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--navy-light), transparent);
+    opacity: 0.3;
+}
+
+/* Countdown Timer */
+.countdown-timer {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--red);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* Custom SVG Icons */
+.card-icon svg {
+    width: 48px;
+    height: 48px;
+}
+
 /* Promo Section */
 .promo-section {
     padding: 100px 0;
