@@ -54,10 +54,10 @@ class BackgroundAnimation {
     initWaves() {
         // Brand Colors with very low opacity for subtle background
         const colors = [
-            'rgba(26, 35, 50, 0.5)',   // Marine (Base)
-            'rgba(230, 57, 70, 0.05)', // Red
-            'rgba(247, 127, 0, 0.05)', // Orange
-            'rgba(252, 191, 73, 0.05)' // Yellow
+            'rgba(26, 35, 50, 0.5)',   // Marine #1a2332
+            'rgba(230, 57, 70, 0.1)',  // Red #e63946
+            'rgba(247, 127, 0, 0.1)',  // Orange #f77f00
+            'rgba(252, 191, 73, 0.1)'  // Yellow #fcbf49
         ];
 
         this.waves.push(new Wave(this.canvas, colors[0], 100, 0.005, 0.002));
