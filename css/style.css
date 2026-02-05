@@ -1304,8 +1304,72 @@ p {
         display: flex;
     }
 
+    .hero {
+        min-height: 100vh;
+        padding: 120px 0 60px;
+    }
+
     .hero-title {
-        font-size: clamp(2rem, 8vw, 3.5rem);
+        font-size: clamp(2rem, 8vw, 3rem);
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 32px;
+    }
+
+    .trust-badges {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 32px;
+    }
+
+    .trust-divider {
+        width: 100%;
+        height: 1px;
+        display: none;
+    }
+
+    .promo-section {
+        padding: 60px 0;
+    }
+
+    .price-new {
+        font-size: 3.5rem;
+    }
+
+    .inclusions-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .inclusion-item {
+        padding: 14px 16px;
+    }
+
+    .expertise-section {
+        padding: 60px 0;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .value-section {
+        padding: 60px 0;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .process-section {
+        padding: 60px 0;
     }
 
     .timeline::before {
@@ -1315,20 +1379,69 @@ p {
     .timeline-item {
         flex-direction: column !important;
         align-items: flex-start;
-        padding-left: 80px;
+        padding-left: 90px;
+        margin-bottom: 40px;
     }
 
     .timeline-number {
         position: absolute;
         left: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .timeline-number svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .timeline-content {
+        padding: 24px 20px;
+        width: 100%;
+    }
+
+    .timeline-features {
+        gap: 6px;
+    }
+
+    .timeline-features span {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .cta-section {
+        padding: 60px 0;
     }
 
     .form-row {
         grid-template-columns: 1fr;
     }
 
+    .contact-form {
+        padding: 28px 20px;
+    }
+
+    .footer {
+        padding: 40px 0 20px;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     .whatsapp-widget {
@@ -1342,6 +1455,20 @@ p {
         width: 26px;
         height: 26px;
     }
+
+    /* Better spacing for mobile */
+    .container {
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1349,19 +1476,129 @@ p {
         padding: 0 16px;
     }
 
-    .inclusions-grid {
-        grid-template-columns: 1fr;
+    .hero {
+        padding: 100px 0 40px;
     }
 
-    .expertise-grid {
-        grid-template-columns: 1fr;
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
     }
 
-    .value-grid {
-        grid-template-columns: 1fr;
+    .hero-subtitle {
+        font-size: 0.95rem;
     }
 
-    .testimonials-grid {
-        grid-template-columns: 1fr;
+    .btn {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+
+    .badge-orange {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+    }
+
+    .trust-badges {
+        padding: 16px;
+    }
+
+    .trust-number {
+        font-size: 1.6rem;
+    }
+
+    .trust-text {
+        font-size: 0.8rem;
+    }
+
+    .price-new {
+        font-size: 3rem;
+    }
+
+    .price-save {
+        font-size: 1.2rem;
+    }
+
+    .card-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .expertise-card {
+        padding: 28px 20px;
+    }
+
+    .value-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .timeline-item {
+        padding-left: 75px;
+    }
+
+    .timeline-number {
+        width: 50px;
+        height: 50px;
+    }
+
+    .timeline-number svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .timeline-content {
+        padding: 20px 16px;
+    }
+
+    .timeline-badge {
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-card {
+        padding: 28px 20px;
+    }
+
+    .contact-form {
+        padding: 24px 16px;
+    }
+
+    .urgency-banner {
+        font-size: 0.85rem;
+        padding: 10px 16px;
+    }
+
+    /* Fix sparkles on mobile */
+    .sparkle {
+        font-size: 1.5rem;
+    }
+
+    /* Improve section spacing */
+    section {
+        padding: 50px 0 !important;
+    }
+
+    .promo-section,
+    .expertise-section,
+    .value-section,
+    .process-section,
+    .testimonials-section,
+    .cta-section {
+        padding: 50px 0 !important;
     }
 }
