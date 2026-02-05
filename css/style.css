@@ -44,8 +44,8 @@ html {
 }
 
 body {
-    background-color: #f8f9fa;
-    /* Blanc cassé/crème */
+    background: linear-gradient(135deg, #e8f0f7 0%, #f5f8fa 100%);
+    /* Soft blue-gray gradient */
     color: #1a2332;
     /* Bleu marine pour texte */
     font-family: var(--font-body);
@@ -90,18 +90,20 @@ a {
 
 /* --- Buttons --- */
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
+    padding: 14px 32px;
+    border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    letter-spacing: 0.5px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    box-shadow: 0 8px 20px rgba(26, 35, 50, 0.1);
 }
 
 .btn:hover {
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(26, 35, 50, 0.15);
 }
 
 .btn-glow {
@@ -144,12 +146,14 @@ a {
 
 /* --- Badge --- */
 .badge {
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 100px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .badge-glass {
@@ -176,11 +180,12 @@ a {
 }
 
 #header.scrolled {
-    background: rgba(248, 249, 250, 0.95);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(26, 35, 50, 0.1);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    border-bottom: 1px solid rgba(26, 35, 50, 0.08);
     padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
 }
 
 .header-container {
@@ -237,8 +242,8 @@ a {
     text-align: center;
     padding-top: 80px;
     position: relative;
-    background: #f8f9fa;
-    /* Blanc cassé */
+    background: linear-gradient(135deg, #e8f0f7 0%, #f5f8fa 100%);
+    /* Soft blue-gray */
     overflow: hidden;
 }
 
@@ -258,23 +263,25 @@ a {
 }
 
 .shape-1 {
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(247, 127, 0, 0.12), rgba(252, 191, 73, 0.12));
     border-radius: 50%;
-    top: -100px;
-    right: -100px;
-    filter: blur(80px);
+    top: -150px;
+    right: -150px;
+    filter: blur(100px);
+    animation: float 20s ease-in-out infinite;
 }
 
 .shape-2 {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(135deg, var(--red), var(--orange));
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(230, 57, 70, 0.1), rgba(247, 127, 0, 0.1));
     border-radius: 50%;
-    bottom: -50px;
-    left: -50px;
-    filter: blur(60px);
+    bottom: -100px;
+    left: -100px;
+    filter: blur(80px);
+    animation: float 25s ease-in-out infinite reverse;
 }
 
 .hero-content h1 {
@@ -440,14 +447,15 @@ section {
 .promo-section {
     padding-top: 0;
     /* Merge closer to hero */
-    background: #f8f9fa;
-    /* Cream background */
+    background: linear-gradient(180deg, #f5f8fa 0%, #ffffff 100%);
+    /* Soft gradient */
 }
 
 .promo-card {
-    background: var(--bg-card);
-    backdrop-filter: blur(20px);
-    border: var(--glass-border);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: var(--radius-xl);
     padding: 60px 40px;
     max-width: 900px;
@@ -455,7 +463,7 @@ section {
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(26, 35, 50, 0.08), 0 0 1px rgba(26, 35, 50, 0.1);
 }
 
 /* Gradient Top Border */
@@ -653,7 +661,25 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--orange);
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(247, 127, 0, 0.1);
+}
+
+/* --- Floating Animation --- */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    33% {
+        transform: translateY(-20px) rotate(2deg);
+    }
+
+    66% {
+        transform: translateY(-10px) rotate(-2deg);
+    }
 }
 
 /* --- Footer --- */
