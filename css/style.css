@@ -239,6 +239,42 @@ a {
     position: relative;
     background: #f8f9fa;
     /* Blanc cassé */
+    overflow: hidden;
+}
+
+.background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.08;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    filter: blur(80px);
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--red), var(--orange));
+    border-radius: 50%;
+    bottom: -50px;
+    left: -50px;
+    filter: blur(60px);
 }
 
 .hero-content h1 {
